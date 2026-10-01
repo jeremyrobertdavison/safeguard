@@ -43,7 +43,7 @@ By default, the dashboard waits for at least three player responses before displ
 
 Once a GitHub release has been published, install Safeguard in Foundry using:
 
-`https://github.com/jeremyrobertdavsion/safeguard/releases/latest/download/module.json`
+`https://github.com/jeremyrobertdavison/safeguard/releases/latest/download/module.json`
 
 In Foundry VTT, open **Add-on Modules → Install Module**, paste the manifest URL into the Manifest URL field, and install it. Enable **Safeguard** for the desired world under **Manage Modules**.
 
@@ -73,7 +73,7 @@ The initial release targets **Foundry VTT v13** and is designed to be game-syste
 
 ## Repository
 
-Project repository: `https://github.com/jeremyrobertdavsion/safeguard`
+Project repository: `https://github.com/jeremyrobertdavison/safeguard`
 
 Issues and feature requests are welcome through the GitHub issue tracker.
 
@@ -87,7 +87,7 @@ Example from the repository root:
 zip -r safeguard.zip module.json README.md LICENSE scripts templates styles lang icons
 ```
 
-Create a GitHub release/tag such as `v1.0.0`, then attach `module.json` and `safeguard.zip`. The manifest and download URLs in `module.json` point to the `latest` release assets so Foundry can install and update the module directly from GitHub.
+Create a GitHub release/tag such as `v1.0.1`, then attach `module.json` and `safeguard.zip`. The manifest and download URLs in `module.json` point to the `latest` release assets so Foundry can install and update the module directly from GitHub.
 
 ## License
 
@@ -97,4 +97,4 @@ Safeguard is released under the MIT License. See [LICENSE](LICENSE).
 
 Created by **Jeremy Davison**.
 
-GitHub: `jeremyrobertdavsion`
+GitHub: `jeremyrobertdavison`

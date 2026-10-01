@@ -2,14 +2,32 @@
   "id": "safeguard",
   "title": "Safeguard",
   "description": "Anonymous player scene and genre preferences with Lines & Veils for Foundry VTT.",
-  "version": "1.0.0",
-  "authors": [{"name":"Jeremy Davison","url":"https://github.com/jeremyrobertdavsion"}],
-  "compatibility": {"minimum":"13","verified":"13"},
-  "esmodules": ["scripts/safeguard.js"],
-  "styles": ["styles/safeguard.css"],
-  "languages": [{"lang":"en","name":"English","path":"lang/en.json"}],
-  "manifest": "https://github.com/jeremyrobertdavsion/safeguard/releases/latest/download/module.json",
-  "download": "https://github.com/jeremyrobertdavsion/safeguard/releases/latest/download/safeguard.zip",
-  "url": "https://github.com/jeremyrobertdavsion/safeguard",
+  "version": "1.0.1",
+  "authors": [
+    {
+      "name": "Jeremy Davison",
+      "url": "https://github.com/jeremyrobertdavison"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "esmodules": [
+    "scripts/safeguard.js"
+  ],
+  "styles": [
+    "styles/safeguard.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "manifest": "https://github.com/jeremyrobertdavison/safeguard/releases/latest/download/module.json",
+  "download": "https://github.com/jeremyrobertdavison/safeguard/releases/latest/download/safeguard.zip",
+  "url": "https://github.com/jeremyrobertdavison/safeguard",
   "license": "MIT"
 }

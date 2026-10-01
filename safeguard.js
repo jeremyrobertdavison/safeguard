@@ -24,16 +24,28 @@ Hooks.once("ready", () => {
 });
 
 Hooks.on("getSceneControlButtons", controls => {
-  const button = {
+  // Foundry VTT v13+ uses a Record<string, SceneControl>. Add Safeguard as
+  // its own left-hand control group with one button tool.
+  controls.safeguard = {
     name: "safeguard",
     title: "Safeguard",
-    icon: "fas fa-shield-heart",
-    button: true,
+    icon: "fa-solid fa-shield-heart",
+    order: 90,
     visible: true,
-    onClick: () => openSafeguard()
+    tools: {
+      openSafeguard: {
+        name: "openSafeguard",
+        title: game.user.isGM ? "Open Safeguard GM Dashboard" : "Open Safeguard Preferences",
+        icon: "fa-solid fa-shield-heart",
+        order: 0,
+        button: true,
+        visible: true,
+        onChange: (_event, active) => {
+          if (active !== false) openSafeguard();
+        }
+      }
+    }
   };
-  if (Array.isArray(controls)) controls.push(button);
-  else if (controls && typeof controls === "object") controls.safeguard = button;
 });
 
 function sanitize(data = {}) {
